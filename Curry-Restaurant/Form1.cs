@@ -16,5 +16,16 @@ namespace Curry_Restaurant
         {
             InitializeComponent();
         }
+
+        private void OptPizza_CheckedChanged(object sender, EventArgs e)
+        {
+            grpSize.Enabled = true;
+            grpToppings.Enabled = true;
+        }
+
+        private void FrmCurryRestaurant_Load(object sender, EventArgs e)
+        {
+            optPizza.Checked = false;
+        }
     }
 }
