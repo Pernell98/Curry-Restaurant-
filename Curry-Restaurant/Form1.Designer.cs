@@ -33,11 +33,15 @@
             this.optPasta = new System.Windows.Forms.RadioButton();
             this.btnSubmit = new System.Windows.Forms.Button();
             this.grpSize = new System.Windows.Forms.GroupBox();
-            this.grpVariety = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.grpPastaVariety = new System.Windows.Forms.GroupBox();
+            this.grpSizes = new System.Windows.Forms.GroupBox();
             this.grpToppings = new System.Windows.Forms.GroupBox();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.grpSauces = new System.Windows.Forms.GroupBox();
+            this.grpTypes = new System.Windows.Forms.GroupBox();
+            this.grpCrust = new System.Windows.Forms.GroupBox();
+            this.grpPizzaVariety = new System.Windows.Forms.GroupBox();
+            this.grpStuffing = new System.Windows.Forms.GroupBox();
+            this.grpAddOn = new System.Windows.Forms.GroupBox();
             this.SuspendLayout();
             // 
             // optPizza
@@ -58,7 +62,6 @@
             this.optBuritto.Name = "optBuritto";
             this.optBuritto.Size = new System.Drawing.Size(77, 21);
             this.optBuritto.TabIndex = 1;
-            this.optBuritto.TabStop = true;
             this.optBuritto.Text = "Burittos";
             this.optBuritto.UseVisualStyleBackColor = true;
             // 
@@ -69,14 +72,13 @@
             this.optPasta.Name = "optPasta";
             this.optPasta.Size = new System.Drawing.Size(65, 21);
             this.optPasta.TabIndex = 2;
-            this.optPasta.TabStop = true;
             this.optPasta.Text = "Pasta";
             this.optPasta.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.optPasta.UseVisualStyleBackColor = true;
             // 
             // btnSubmit
             // 
-            this.btnSubmit.Location = new System.Drawing.Point(871, 547);
+            this.btnSubmit.Location = new System.Drawing.Point(862, 391);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(98, 31);
             this.btnSubmit.TabIndex = 3;
@@ -93,63 +95,104 @@
             this.grpSize.TabStop = false;
             this.grpSize.Text = "Size";
             // 
-            // grpVariety
+            // grpPastaVariety
             // 
-            this.grpVariety.Enabled = false;
-            this.grpVariety.Location = new System.Drawing.Point(285, 154);
-            this.grpVariety.Name = "grpVariety";
-            this.grpVariety.Size = new System.Drawing.Size(200, 100);
-            this.grpVariety.TabIndex = 5;
-            this.grpVariety.TabStop = false;
-            this.grpVariety.Text = "Variety";
+            this.grpPastaVariety.Enabled = false;
+            this.grpPastaVariety.Location = new System.Drawing.Point(285, 154);
+            this.grpPastaVariety.Name = "grpPastaVariety";
+            this.grpPastaVariety.Size = new System.Drawing.Size(200, 100);
+            this.grpPastaVariety.TabIndex = 5;
+            this.grpPastaVariety.TabStop = false;
+            this.grpPastaVariety.Text = "Pasta Variety";
             // 
-            // groupBox3
+            // grpSizes
             // 
-            this.groupBox3.Location = new System.Drawing.Point(507, 154);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(200, 100);
-            this.groupBox3.TabIndex = 5;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "groupBox3";
+            this.grpSizes.Location = new System.Drawing.Point(507, 154);
+            this.grpSizes.Name = "grpSizes";
+            this.grpSizes.Size = new System.Drawing.Size(200, 100);
+            this.grpSizes.TabIndex = 5;
+            this.grpSizes.TabStop = false;
+            this.grpSizes.Text = "Sizes";
             // 
             // grpToppings
             // 
             this.grpToppings.Enabled = false;
-            this.grpToppings.Location = new System.Drawing.Point(40, 322);
+            this.grpToppings.Location = new System.Drawing.Point(40, 277);
             this.grpToppings.Name = "grpToppings";
             this.grpToppings.Size = new System.Drawing.Size(200, 100);
             this.grpToppings.TabIndex = 6;
             this.grpToppings.TabStop = false;
             this.grpToppings.Text = "Toppings";
             // 
-            // groupBox5
+            // grpSauces
             // 
-            this.groupBox5.Enabled = false;
-            this.groupBox5.Location = new System.Drawing.Point(273, 322);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(200, 100);
-            this.groupBox5.TabIndex = 5;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "groupBox5";
+            this.grpSauces.Enabled = false;
+            this.grpSauces.Location = new System.Drawing.Point(273, 322);
+            this.grpSauces.Name = "grpSauces";
+            this.grpSauces.Size = new System.Drawing.Size(200, 100);
+            this.grpSauces.TabIndex = 5;
+            this.grpSauces.TabStop = false;
+            this.grpSauces.Text = "Sauces";
             // 
-            // groupBox6
+            // grpTypes
             // 
-            this.groupBox6.Location = new System.Drawing.Point(507, 322);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(200, 100);
-            this.groupBox6.TabIndex = 7;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "groupBox6";
+            this.grpTypes.Location = new System.Drawing.Point(507, 307);
+            this.grpTypes.Name = "grpTypes";
+            this.grpTypes.Size = new System.Drawing.Size(200, 100);
+            this.grpTypes.TabIndex = 7;
+            this.grpTypes.TabStop = false;
+            this.grpTypes.Text = "Types";
+            // 
+            // grpCrust
+            // 
+            this.grpCrust.Location = new System.Drawing.Point(40, 407);
+            this.grpCrust.Name = "grpCrust";
+            this.grpCrust.Size = new System.Drawing.Size(200, 100);
+            this.grpCrust.TabIndex = 0;
+            this.grpCrust.TabStop = false;
+            this.grpCrust.Text = "Crust";
+            // 
+            // grpPizzaVariety
+            // 
+            this.grpPizzaVariety.Location = new System.Drawing.Point(40, 534);
+            this.grpPizzaVariety.Name = "grpPizzaVariety";
+            this.grpPizzaVariety.Size = new System.Drawing.Size(200, 100);
+            this.grpPizzaVariety.TabIndex = 0;
+            this.grpPizzaVariety.TabStop = false;
+            this.grpPizzaVariety.Text = "Pizza Variety";
+            // 
+            // grpStuffing
+            // 
+            this.grpStuffing.Location = new System.Drawing.Point(40, 665);
+            this.grpStuffing.Name = "grpStuffing";
+            this.grpStuffing.Size = new System.Drawing.Size(200, 100);
+            this.grpStuffing.TabIndex = 0;
+            this.grpStuffing.TabStop = false;
+            this.grpStuffing.Text = "Stuffing";
+            // 
+            // grpAddOn
+            // 
+            this.grpAddOn.Enabled = false;
+            this.grpAddOn.Location = new System.Drawing.Point(285, 461);
+            this.grpAddOn.Name = "grpAddOn";
+            this.grpAddOn.Size = new System.Drawing.Size(200, 100);
+            this.grpAddOn.TabIndex = 8;
+            this.grpAddOn.TabStop = false;
+            this.grpAddOn.Text = "Add On";
             // 
             // frmCurryRestaurant
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1076, 625);
-            this.Controls.Add(this.groupBox6);
-            this.Controls.Add(this.groupBox5);
+            this.ClientSize = new System.Drawing.Size(999, 790);
+            this.Controls.Add(this.grpAddOn);
+            this.Controls.Add(this.grpCrust);
+            this.Controls.Add(this.grpPizzaVariety);
+            this.Controls.Add(this.grpStuffing);
+            this.Controls.Add(this.grpTypes);
+            this.Controls.Add(this.grpSauces);
             this.Controls.Add(this.grpToppings);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.grpVariety);
+            this.Controls.Add(this.grpSizes);
+            this.Controls.Add(this.grpPastaVariety);
             this.Controls.Add(this.grpSize);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.optPasta);
@@ -170,11 +213,15 @@
         private System.Windows.Forms.RadioButton optPasta;
         private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.GroupBox grpSize;
-        private System.Windows.Forms.GroupBox grpVariety;
-        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox grpPastaVariety;
+        private System.Windows.Forms.GroupBox grpSizes;
         private System.Windows.Forms.GroupBox grpToppings;
-        private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.GroupBox grpSauces;
+        private System.Windows.Forms.GroupBox grpTypes;
+        private System.Windows.Forms.GroupBox grpCrust;
+        private System.Windows.Forms.GroupBox grpPizzaVariety;
+        private System.Windows.Forms.GroupBox grpStuffing;
+        private System.Windows.Forms.GroupBox grpAddOn;
     }
 }
 
