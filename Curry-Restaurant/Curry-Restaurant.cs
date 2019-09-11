@@ -50,5 +50,21 @@ namespace Curry_Restaurant
         {
 
         }
+
+        private void BtnSubmit_Click(object sender, EventArgs e)
+        {
+            if(optPizza.Checked)
+            {
+                Pizza pizzaMenu = new Pizza();
+
+                string size = pizzaMenu.pizzaSize(chkSmallPizza.Text);
+                string Toppings = pizzaMenu.pizzaToppings(chkPepperoni.Text);
+                string Crust = pizzaMenu.pizzaCrust(chkThin.Text);
+                string PizzaVariety = pizzaMenu.pizzaVariety(chkBaked.Text);
+                string Stuffing = pizzaMenu.pizzaStuffing(chkPlain.Text);
+            }
+
+           
+        }
     }
 }

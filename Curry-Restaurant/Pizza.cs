@@ -12,7 +12,7 @@ namespace Curry_Restaurant
         {
 
         }
-        public string PizzaSize(string size)
+        public string pizzaSize(string size)
         {
             if (size.Equals("small"))
             {
