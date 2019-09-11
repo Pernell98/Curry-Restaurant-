@@ -57,11 +57,13 @@ namespace Curry_Restaurant
             {
                 Pizza pizzaMenu = new Pizza();
 
-                string size = pizzaMenu.pizzaSize(chkSmallPizza.Text);
+                string size = pizzaMenu.pizzaSize(chkSmallPizza.Text, chkMedium.Text, chkLarge.Text) ;
                 string Toppings = pizzaMenu.pizzaToppings(chkPepperoni.Text);
                 string Crust = pizzaMenu.pizzaCrust(chkThin.Text);
                 string PizzaVariety = pizzaMenu.pizzaVariety(chkBaked.Text);
                 string Stuffing = pizzaMenu.pizzaStuffing(chkPlain.Text);
+
+                txtDisplayOrder.Text = "your order of a " + size + " pizza will be right out ";
             }
 
            

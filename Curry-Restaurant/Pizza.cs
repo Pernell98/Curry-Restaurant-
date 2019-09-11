@@ -8,23 +8,24 @@ namespace Curry_Restaurant
 {
     class Pizza
     {
+        private string size;
         public Pizza()
         {
 
         }
-        public string pizzaSize(string size)
+        public string pizzaSize(string small, string meduim, string large )
         {
-            if (size.Equals("small"))
+            if (small.Equals("Small"))
             {
-                return size;
+                return size = "Small";
             }
-            else if (size.Equals("meduim"))
+            else if (meduim.Equals("Medium"))
             {
-                return size;
+                return size = "Meduim";
             }
             else
             {
-                return size;
+                return size = "Large";
             }
         }
 
