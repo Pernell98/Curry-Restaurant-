@@ -13,13 +13,13 @@ namespace Curry_Restaurant
         {
 
         }
-        public string pizzaSize(string small, string meduim, string large )
+        public string pizzaSize(string text )
         {
-            if (small.Equals("Small"))
+            if (text.Equals("Small"))
             {
                 return size = "Small";
             }
-            else if (meduim.Equals("Medium"))
+            else if (text.Equals("Medium"))
             {
                 return size = "Meduim";
             }
@@ -89,5 +89,6 @@ namespace Curry_Restaurant
                 return stuffing;
             }
         }
+
     }
 }
