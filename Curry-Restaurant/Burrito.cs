@@ -13,7 +13,7 @@ namespace Curry_Restaurant
 
         }
 
-        public string sizes(string sizes)
+        public string burritoSizes(string sizes)
         {
             if(sizes.Equals("petit"))
             {
@@ -29,7 +29,7 @@ namespace Curry_Restaurant
             }
         }
 
-        public string types(string types)
+        public string burritotypes(string types)
         {
             if(types.Equals("machaca"))
             {

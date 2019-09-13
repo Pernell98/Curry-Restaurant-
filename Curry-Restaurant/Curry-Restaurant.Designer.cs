@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.optPizza = new System.Windows.Forms.RadioButton();
-            this.optBuritto = new System.Windows.Forms.RadioButton();
+            this.optBurrito = new System.Windows.Forms.RadioButton();
             this.optPasta = new System.Windows.Forms.RadioButton();
             this.btnSubmit = new System.Windows.Forms.Button();
             this.grpPizzaSizes = new System.Windows.Forms.GroupBox();
@@ -43,7 +43,7 @@
             this.chkRigatoniStuffed = new System.Windows.Forms.CheckBox();
             this.chkAngelHair = new System.Windows.Forms.CheckBox();
             this.chkSpaghetti = new System.Windows.Forms.CheckBox();
-            this.grpBurittoSizes = new System.Windows.Forms.GroupBox();
+            this.grpBurritoSizes = new System.Windows.Forms.GroupBox();
             this.chkHumongous = new System.Windows.Forms.CheckBox();
             this.chkAverage = new System.Windows.Forms.CheckBox();
             this.chkPetite = new System.Windows.Forms.CheckBox();
@@ -54,7 +54,7 @@
             this.grpSauces = new System.Windows.Forms.GroupBox();
             this.chkWhite = new System.Windows.Forms.CheckBox();
             this.chkRed = new System.Windows.Forms.CheckBox();
-            this.grpTypes = new System.Windows.Forms.GroupBox();
+            this.grpBurritoTypes = new System.Windows.Forms.GroupBox();
             this.chkVegetarian = new System.Windows.Forms.CheckBox();
             this.chkPolo = new System.Windows.Forms.CheckBox();
             this.chkMachaca = new System.Windows.Forms.CheckBox();
@@ -76,10 +76,10 @@
             this.txtDisplayOrder = new System.Windows.Forms.TextBox();
             this.grpPizzaSizes.SuspendLayout();
             this.grpPastaVariety.SuspendLayout();
-            this.grpBurittoSizes.SuspendLayout();
+            this.grpBurritoSizes.SuspendLayout();
             this.grpToppings.SuspendLayout();
             this.grpSauces.SuspendLayout();
-            this.grpTypes.SuspendLayout();
+            this.grpBurritoTypes.SuspendLayout();
             this.grpCrust.SuspendLayout();
             this.grpPizzaVariety.SuspendLayout();
             this.grpStuffing.SuspendLayout();
@@ -97,16 +97,16 @@
             this.optPizza.UseVisualStyleBackColor = true;
             this.optPizza.CheckedChanged += new System.EventHandler(this.OptPizza_CheckedChanged);
             // 
-            // optBuritto
+            // optBurrito
             // 
-            this.optBuritto.AutoSize = true;
-            this.optBuritto.Location = new System.Drawing.Point(507, 77);
-            this.optBuritto.Name = "optBuritto";
-            this.optBuritto.Size = new System.Drawing.Size(77, 21);
-            this.optBuritto.TabIndex = 1;
-            this.optBuritto.Text = "Burittos";
-            this.optBuritto.UseVisualStyleBackColor = true;
-            this.optBuritto.CheckedChanged += new System.EventHandler(this.OptBuritto_CheckedChanged);
+            this.optBurrito.AutoSize = true;
+            this.optBurrito.Location = new System.Drawing.Point(507, 77);
+            this.optBurrito.Name = "optBurrito";
+            this.optBurrito.Size = new System.Drawing.Size(78, 21);
+            this.optBurrito.TabIndex = 1;
+            this.optBurrito.Text = "Burritos";
+            this.optBurrito.UseVisualStyleBackColor = true;
+            this.optBurrito.CheckedChanged += new System.EventHandler(this.OptBuritto_CheckedChanged);
             // 
             // optPasta
             // 
@@ -250,18 +250,18 @@
             this.chkSpaghetti.Text = "Spaghetti";
             this.chkSpaghetti.UseVisualStyleBackColor = true;
             // 
-            // grpBurittoSizes
+            // grpBurritoSizes
             // 
-            this.grpBurittoSizes.Controls.Add(this.chkHumongous);
-            this.grpBurittoSizes.Controls.Add(this.chkAverage);
-            this.grpBurittoSizes.Controls.Add(this.chkPetite);
-            this.grpBurittoSizes.Enabled = false;
-            this.grpBurittoSizes.Location = new System.Drawing.Point(507, 154);
-            this.grpBurittoSizes.Name = "grpBurittoSizes";
-            this.grpBurittoSizes.Size = new System.Drawing.Size(200, 100);
-            this.grpBurittoSizes.TabIndex = 5;
-            this.grpBurittoSizes.TabStop = false;
-            this.grpBurittoSizes.Text = "Buritto Sizes";
+            this.grpBurritoSizes.Controls.Add(this.chkHumongous);
+            this.grpBurritoSizes.Controls.Add(this.chkAverage);
+            this.grpBurritoSizes.Controls.Add(this.chkPetite);
+            this.grpBurritoSizes.Enabled = false;
+            this.grpBurritoSizes.Location = new System.Drawing.Point(507, 154);
+            this.grpBurritoSizes.Name = "grpBurritoSizes";
+            this.grpBurritoSizes.Size = new System.Drawing.Size(200, 100);
+            this.grpBurritoSizes.TabIndex = 5;
+            this.grpBurritoSizes.TabStop = false;
+            this.grpBurritoSizes.Text = "Burrito Sizes";
             // 
             // chkHumongous
             // 
@@ -368,18 +368,18 @@
             this.chkRed.Text = "Red";
             this.chkRed.UseVisualStyleBackColor = true;
             // 
-            // grpTypes
+            // grpBurritoTypes
             // 
-            this.grpTypes.Controls.Add(this.chkVegetarian);
-            this.grpTypes.Controls.Add(this.chkPolo);
-            this.grpTypes.Controls.Add(this.chkMachaca);
-            this.grpTypes.Enabled = false;
-            this.grpTypes.Location = new System.Drawing.Point(507, 322);
-            this.grpTypes.Name = "grpTypes";
-            this.grpTypes.Size = new System.Drawing.Size(200, 100);
-            this.grpTypes.TabIndex = 7;
-            this.grpTypes.TabStop = false;
-            this.grpTypes.Text = "Types";
+            this.grpBurritoTypes.Controls.Add(this.chkVegetarian);
+            this.grpBurritoTypes.Controls.Add(this.chkPolo);
+            this.grpBurritoTypes.Controls.Add(this.chkMachaca);
+            this.grpBurritoTypes.Enabled = false;
+            this.grpBurritoTypes.Location = new System.Drawing.Point(507, 322);
+            this.grpBurritoTypes.Name = "grpBurritoTypes";
+            this.grpBurritoTypes.Size = new System.Drawing.Size(200, 100);
+            this.grpBurritoTypes.TabIndex = 7;
+            this.grpBurritoTypes.TabStop = false;
+            this.grpBurritoTypes.Text = "Types";
             // 
             // chkVegetarian
             // 
@@ -589,15 +589,15 @@
             this.Controls.Add(this.grpCrust);
             this.Controls.Add(this.grpPizzaVariety);
             this.Controls.Add(this.grpStuffing);
-            this.Controls.Add(this.grpTypes);
+            this.Controls.Add(this.grpBurritoTypes);
             this.Controls.Add(this.grpSauces);
             this.Controls.Add(this.grpToppings);
-            this.Controls.Add(this.grpBurittoSizes);
+            this.Controls.Add(this.grpBurritoSizes);
             this.Controls.Add(this.grpPastaVariety);
             this.Controls.Add(this.grpPizzaSizes);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.optPasta);
-            this.Controls.Add(this.optBuritto);
+            this.Controls.Add(this.optBurrito);
             this.Controls.Add(this.optPizza);
             this.Name = "frmCurryRestaurant";
             this.Text = "Curry Restaurant Menu";
@@ -606,14 +606,14 @@
             this.grpPizzaSizes.PerformLayout();
             this.grpPastaVariety.ResumeLayout(false);
             this.grpPastaVariety.PerformLayout();
-            this.grpBurittoSizes.ResumeLayout(false);
-            this.grpBurittoSizes.PerformLayout();
+            this.grpBurritoSizes.ResumeLayout(false);
+            this.grpBurritoSizes.PerformLayout();
             this.grpToppings.ResumeLayout(false);
             this.grpToppings.PerformLayout();
             this.grpSauces.ResumeLayout(false);
             this.grpSauces.PerformLayout();
-            this.grpTypes.ResumeLayout(false);
-            this.grpTypes.PerformLayout();
+            this.grpBurritoTypes.ResumeLayout(false);
+            this.grpBurritoTypes.PerformLayout();
             this.grpCrust.ResumeLayout(false);
             this.grpCrust.PerformLayout();
             this.grpPizzaVariety.ResumeLayout(false);
@@ -630,15 +630,15 @@
         #endregion
 
         private System.Windows.Forms.RadioButton optPizza;
-        private System.Windows.Forms.RadioButton optBuritto;
+        private System.Windows.Forms.RadioButton optBurrito;
         private System.Windows.Forms.RadioButton optPasta;
         private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.GroupBox grpPizzaSizes;
         private System.Windows.Forms.GroupBox grpPastaVariety;
-        private System.Windows.Forms.GroupBox grpBurittoSizes;
+        private System.Windows.Forms.GroupBox grpBurritoSizes;
         private System.Windows.Forms.GroupBox grpToppings;
         private System.Windows.Forms.GroupBox grpSauces;
-        private System.Windows.Forms.GroupBox grpTypes;
+        private System.Windows.Forms.GroupBox grpBurritoTypes;
         private System.Windows.Forms.GroupBox grpCrust;
         private System.Windows.Forms.GroupBox grpPizzaVariety;
         private System.Windows.Forms.GroupBox grpStuffing;

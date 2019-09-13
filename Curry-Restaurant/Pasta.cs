@@ -13,21 +13,30 @@ namespace Curry_Restaurant
 
         }
 
-        public string variety(string variety)
+        public string PastaVariety(string variety)
         {
-            if(variety.Equals("spaghetti"))
+            if (variety.Equals("Spaghetti"))
             {
-                return variety;
+                return "Spaghetti";
             }
-            else if(variety.Equals("angel hair"))
+            else if (variety.Equals("Angel Hair"))
             {
-                return variety;
+                return "Angel Hair";
+            }
+            else if (variety.Equals("Rigatoni Stuffed"))
+            {
+                return "Rigatoni Stuffed";
+            }
+            else if (variety.Equals("Rigatoni Beef"))
+            {
+                return "Rigatoni Beef";
+            }
+            else if (variety.Equals("Rigatoni Sausage"))
+            {
+                return "Rigatoni Sausage";
             }
             else
-            {
-                return variety;
-
-            }
+                return "Rigatoni Cheese";
         }
 
         public string meat(string meat)

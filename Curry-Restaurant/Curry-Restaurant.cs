@@ -30,7 +30,7 @@ namespace Curry_Restaurant
         {
             optPizza.Checked = false;
             optPasta.Checked = false;
-            optBuritto.Checked = false;
+            optBurrito.Checked = false;
         }
 
         private void OptPasta_CheckedChanged(object sender, EventArgs e)
@@ -42,8 +42,8 @@ namespace Curry_Restaurant
 
         private void OptBuritto_CheckedChanged(object sender, EventArgs e)
         {
-            grpBurittoSizes.Enabled = true;
-            grpTypes.Enabled = true;
+            grpBurritoSizes.Enabled = true;
+            grpBurritoTypes.Enabled = true;
         }
 
         private void ChkMedium_CheckedChanged(object sender, EventArgs e)
@@ -53,19 +53,39 @@ namespace Curry_Restaurant
 
         private void BtnSubmit_Click(object sender, EventArgs e)
         {
-            if(optPizza.Checked)
+            if (optPizza.Checked)
             {
                 Pizza menu = new Pizza();
 
-                string  pizzaSize  = menu.pizzaSize(size());
+                string pizzaSize = menu.pizzaSize(size());
                 string pizzaToppings = menu.pizzaToppings(toppings());
                 string pizzaCrust = menu.pizzaCrust(crust());
                 string pizzaVariety = menu.pizzaVariety(variety());
                 string pizzaStuffing = menu.pizzaStuffing(stuffing());
-                string pastaVariety = menu.
-                
+
+                txtDisplayOrder.Text = "your order of a " + pizzaSize + " with " + pizzaToppings + " and " + pizzaCrust + " and " + pizzaStuffing + " will be right out";
+
             }
-           
+            else if (optPasta.Checked)
+            {
+                Pasta menu = new Pasta();
+
+                string pastaVariety = menu.PastaVariety(varietyPasta());
+                string pastaSauce = menu.sauces(pastaSauces());
+                string pastaAddOn = menu.addOn(AddOnPasta());
+
+                txtDisplayOrder.Text = "You order of " + pastaVariety + " with " + pastaSauce + " with " + pastaAddOn + " will be right out";
+            }
+
+            else 
+            {
+                Burrito menu = new Burrito();
+
+                string size = menu.burritoSizes(burritoSizes());
+                string types = menu.burritotypes(burritoTypes());
+
+                txtDisplayOrder.Text = "Your order of a " + size + " " + types + " will be right out";
+            }
         }
 
         //pizza
@@ -139,7 +159,7 @@ namespace Curry_Restaurant
         }
 
         //pasta
-        private string pastaVariety()
+        private string varietyPasta()
         {
             if (chkSpaghetti.Checked)
             {
@@ -165,7 +185,7 @@ namespace Curry_Restaurant
                 return chkRigatoniCheese.Text;
         }
 
-        private string Sauces()
+        private string pastaSauces()
         {
             if (chkRed.Checked)
             {
@@ -178,7 +198,7 @@ namespace Curry_Restaurant
 
         }
 
-        private string AddOn()
+        private string AddOnPasta()
         {
             if (chkPlainAdd.Checked)
             {
@@ -192,8 +212,8 @@ namespace Curry_Restaurant
                 return chkSausage.Text;
         }
 
-        //Burrittos
-        private string BurrittoSizes()
+        //Burritos
+        private string burritoSizes()
         {
             if (chkPetite.Checked)
             {
@@ -207,7 +227,7 @@ namespace Curry_Restaurant
                 return chkHumongous.Text;
         }
 
-        private string Types()
+        private string burritoTypes()
         {
             if (chkMachaca.Checked)
             {
