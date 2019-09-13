@@ -24,6 +24,11 @@ namespace Curry_Restaurant
             grpToppings.Enabled = true;
             grpPizzaVariety.Enabled = true;
             grpStuffing.Enabled = true;
+            grpPastaVariety.Enabled = false;
+            grpSauces.Enabled = false;
+            grpAddOn.Enabled = false;
+            grpBurritoSizes.Enabled = false;
+            grpBurritoTypes.Enabled = false;
         }
 
         private void FrmCurryRestaurant_Load(object sender, EventArgs e)
@@ -35,13 +40,28 @@ namespace Curry_Restaurant
 
         private void OptPasta_CheckedChanged(object sender, EventArgs e)
         {
+            grpPizzaSizes.Enabled = false;
+            grpCrust.Enabled = false;
+            grpToppings.Enabled = false;
+            grpPizzaVariety.Enabled = false;
+            grpStuffing.Enabled = false;
             grpPastaVariety.Enabled = true;
             grpSauces.Enabled = true;
             grpAddOn.Enabled = true;
+            grpBurritoSizes.Enabled = false;
+            grpBurritoTypes.Enabled = false;
         }
 
         private void OptBuritto_CheckedChanged(object sender, EventArgs e)
         {
+            grpPizzaSizes.Enabled = false;
+            grpCrust.Enabled = false;
+            grpToppings.Enabled = false;
+            grpPizzaVariety.Enabled = false;
+            grpStuffing.Enabled = false;
+            grpPastaVariety.Enabled = false;
+            grpSauces.Enabled = false;
+            grpAddOn.Enabled = false;
             grpBurritoSizes.Enabled = true;
             grpBurritoTypes.Enabled = true;
         }
@@ -63,7 +83,7 @@ namespace Curry_Restaurant
                 string pizzaVariety = menu.pizzaVariety(variety());
                 string pizzaStuffing = menu.pizzaStuffing(stuffing());
 
-                txtDisplayOrder.Text = "your order of a " + pizzaSize + " with " + pizzaToppings + " and " + pizzaCrust + " and " + pizzaStuffing + " will be right out";
+                txtDisplayOrder.Text = "your order of a " + pizzaSize + " with " + pizzaToppings + ", " + pizzaCrust + ", " + pizzaVariety + " and " + pizzaStuffing + " will be right out";
 
             }
             else if (optPasta.Checked)
@@ -74,7 +94,7 @@ namespace Curry_Restaurant
                 string pastaSauce = menu.sauces(pastaSauces());
                 string pastaAddOn = menu.addOn(AddOnPasta());
 
-                txtDisplayOrder.Text = "You order of " + pastaVariety + " with " + pastaSauce + " with " + pastaAddOn + " will be right out";
+                txtDisplayOrder.Text = "You order of " + pastaVariety + " with " + pastaSauce + " and " + pastaAddOn + " will be right out";
             }
 
             else 
@@ -239,6 +259,16 @@ namespace Curry_Restaurant
             }
             else
                 return chkVegetarian.Text;
+        }
+
+        private void BtnClear_Click(object sender, EventArgs e)
+        {
+            txtDisplayOrder.Clear();
+        }
+
+        private void BtnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

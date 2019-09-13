@@ -74,6 +74,8 @@
             this.chkMeatballs = new System.Windows.Forms.CheckBox();
             this.chkPlainAdd = new System.Windows.Forms.CheckBox();
             this.txtDisplayOrder = new System.Windows.Forms.TextBox();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             this.grpPizzaSizes.SuspendLayout();
             this.grpPastaVariety.SuspendLayout();
             this.grpBurritoSizes.SuspendLayout();
@@ -122,7 +124,7 @@
             // 
             // btnSubmit
             // 
-            this.btnSubmit.Location = new System.Drawing.Point(276, 656);
+            this.btnSubmit.Location = new System.Drawing.Point(276, 603);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(98, 31);
             this.btnSubmit.TabIndex = 3;
@@ -580,10 +582,32 @@
             this.txtDisplayOrder.Size = new System.Drawing.Size(297, 181);
             this.txtDisplayOrder.TabIndex = 9;
             // 
+            // btnClear
+            // 
+            this.btnClear.Location = new System.Drawing.Point(276, 665);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(98, 31);
+            this.btnClear.TabIndex = 10;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.BtnClear_Click);
+            // 
+            // btnExit
+            // 
+            this.btnExit.Location = new System.Drawing.Point(276, 727);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(98, 31);
+            this.btnExit.TabIndex = 11;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.BtnExit_Click);
+            // 
             // frmCurryRestaurant
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(720, 790);
+            this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.btnClear);
             this.Controls.Add(this.txtDisplayOrder);
             this.Controls.Add(this.grpAddOn);
             this.Controls.Add(this.grpCrust);
@@ -675,6 +699,8 @@
         private System.Windows.Forms.CheckBox chkSausage;
         private System.Windows.Forms.CheckBox chkMeatballs;
         private System.Windows.Forms.CheckBox chkPlainAdd;
+        private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Button btnExit;
     }
 }
 
